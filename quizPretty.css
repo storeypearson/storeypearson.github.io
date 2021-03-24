@@ -1,0 +1,353 @@
+@font-face{
+    font-family:"Orna-Regular";
+    src: url("Orna-Regular.woff") format("woff");
+}
+
+html, body{
+  margin:0;
+  padding:0;
+  height:100%;
+  color:#14152C;
+}
+
+body{
+  background-color:#f7f8fc;
+  font-family:"Orna-Regular";
+}
+
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image:-webkit-linear-gradient(top left, #b8ffce 0%, #bbe0ed 32%, #66ff95 69%, #0adbff 80%, #367fff 100%);
+    padding: 15px 10px;
+    box-shadow: 0px -2px 12px rgba(0,0,0,0.1);
+}
+
+.bottom__container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress {
+    width: 40%;
+    height: 10px;
+    position: relative;
+    border-radius: 5px;
+    overflow:hidden;
+    background-color: #ecedf5;
+}
+.progress__inner {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    height: 100%;
+    left: 0;
+    width: 0%;
+    background-color: #5861af;
+    transition:.4s width linear
+}
+
+.navigation__btn path{
+  fill:#A7AACB
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__btn {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    border: 1px solid #A7AACB;
+    justify-content: center;
+    height: 44px;
+}
+
+.navigation__btn--left{
+  border-top-left-radius:6px;
+    border-bottom-left-radius:6px
+}
+
+.navigation__btn--right{
+  border-top-right-radius:6px;
+    border-bottom-right-radius:6px
+}
+
+.quiz__question{
+  font-weight:500;
+  letter-spacing:1px;
+  font-size: 3em;
+}
+
+.quiz__summary{
+    justify-content: center;
+}
+
+
+
+/*underline
+.reset {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-size: 1.5em
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.reset:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background-image: linear-gradient(120deg, #54ff00 0%, #c8fcff 100%);
+  background: aqua;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.reset:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+*/
+
+a
+{
+    font-size: 1.5em;
+    position: relative;
+    padding: 15px 30px;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+a:hover
+{
+ background: linear-gradient(90deg, #54ff00, #00ffed);
+}
+a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#fff,transparent);
+    transition: 0.5s;
+}
+a:hover::before
+{
+    left: 100%;
+}
+
+.quiz__end{
+  font-weight:500;
+  letter-spacing:1px;
+  text-align: center;
+}
+
+
+#end{
+  font-size: 3em; 
+  letter-spacing:1px;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 74px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+}
+.answer:first-of-type{
+  margin-right:15px;
+}
+
+.answer{
+    margin: auto;
+    padding: 50px;
+}
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+/*  font: 14px/20px 'Open Sans', Arial, sans-serif;*/
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*
+.answer__input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+  outline:none !important;
+}
+*/
+.answer__label {
+    width: 540px;
+    font-size: 1.5em;
+    font-weight: 500;
+    left: -10%;
+}
+
+
+/*
+.answer {
+    display: inline-block;
+    margin-right:10px;
+}
+*/
+
+.quiz__answer {
+    text-align: left;
+}
+    
+
+
+/*
+.answer__input:checked + .answer__label{
+  border-color:#5861af;
+  color:#14152C;
+  box-shadow: 0px 0px 1px 4px rgba(88,97,175, 0.2)
+}
+
+.answer__input:checked + .answer__label .answer__tick{
+  opacity:1;
+  visibility:visible;
+}
+*/
+
+.answer__char {
+    line-height: 24px;
+    display: inline-block;
+    width: 26px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 4px;
+    color: #c8cae0;
+    border: 1px solid #c8cae0;
+    font-weight: 600;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.answer__tick {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #5861af;
+    margin-left: 20px;
+    line-height: 14px;
+    border-radius: 50%;
+    padding: 4px;
+  opacity:0;
+  visibility:hidden;
+}
+
+.answer__tick path{
+  fill:#fff
+}
+.quiz__inner {
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quiz__step:not(.quiz__step--current){
+  visibility:hidden;
+  opacity:0;
+  display:none;
+}
+
+.navigation__btn--disabled {
+    opacity: 0.4;
+}
+.submit__container {
+    margin-top: 25px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+}
+.
+
+.thanks__tick {
+    line-height: 50px;
+    width: 50px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #5861af;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+}
+.thanks__title {
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 40px;
+}
+.thanks{
+  text-align:center;
+}

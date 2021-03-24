@@ -1,0 +1,687 @@
+@font-face{
+    font-family:"Orna-Regular";
+    src: url("Orna-Regular.woff") format("woff");
+}
+/*
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*/
+
+body {
+    font-family: "Orna-Regular",sans-serif;
+    line-height: 1.5;
+/*
+    background-image:-webkit-radial-gradient(center, #b8ffce 0%, #bbe0ed 32%, #66ff95 69%, #0adbff 80%, #367fff 100%);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+*/
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.divider{
+    position: absolute;
+    border-right:1px #ff0000;  
+}
+
+#container {
+    background-color:black;
+     width: 200%;
+    height: 200%;
+    overflow:hidden;
+
+}
+div {position:fixed;}
+
+.bg {
+  width:100%; 
+  height:100%; 
+   }
+
+.one{
+   background: radial-gradient(#9bddfe, #86ffab);
+}
+
+.two{
+     background: radial-gradient(#9bddfe, #86ffab);
+}
+
+.three{
+   background: radial-gradient(#9bddfe, #86ffab);
+}
+
+.four{ 
+    background: radial-gradient(#9bddfe, #86ffab); 
+}
+
+/*Section 1*/
+#wrapper {
+    -webkit-perspective: 20000;
+    height: 10em;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    margin: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    height:290px;
+    width:1230px;  
+}
+
+/*Star Positioning*/
+
+.div1{
+    height: 10em;
+    position: relative;
+/*
+    height:370px;
+    width:1600px;
+*/
+    top: 300%;
+    left: 50%;
+}
+
+.div2{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 0%;
+    left: 10%;
+}
+
+.div3{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 150%;
+    left: 25%;
+}
+
+.div4{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 238%;
+    left: 35%;
+}
+
+.div5{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 377%;
+    left: 45%;
+}
+
+.div6{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 457%;
+    left: 53%;
+}
+
+.div7{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 668%;
+    left: 62%;
+}
+
+.div8{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 737%;
+    left: 72%;
+}
+
+.div9{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 902%;
+    left: 87%;
+}
+
+.div10{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 956%;
+    left: 85%;
+}
+
+.div11{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1069%;
+    left: 92%;
+}
+
+.div12{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1099%;
+    left: 6%;
+}
+
+.div13{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1194%;
+    left: 9%;
+}
+
+.div14{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1130%;
+    left: 10%;
+}
+
+.div15{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1300%;
+    left: 19%;
+}
+
+.div16{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1395%;
+    left: 36%;
+}
+
+.div17{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1491%;
+    left: 44%;
+}
+
+.div18{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1674%;
+    left: 49%;
+}
+
+.div19{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1694%;
+    left: 63%;
+}
+
+.div20{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 1874%;
+    left: 71%;
+}
+
+.div21{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 2034%;
+    left: 80%;
+}
+
+.div22{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 2070%;
+    left: 84%;
+}
+
+/*Star Sizes*/
+.biggestStar{
+    position: absolute;
+    margin: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    height:150px;
+    width: 150px;
+}
+
+.bigStar{
+    position: absolute;
+    margin: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    height:110px;
+    width: 110px;
+}
+
+.medStar{
+    position: absolute;
+    margin: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    height:90px;
+    width: 90px;
+}
+
+.smallStar{
+    position: absolute;
+    margin: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    height:60px;
+    width: 60px;
+}
+
+.smallishStar{
+    position: absolute;
+    margin: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    height:40px;
+    width: 40px;
+}
+
+.smallestStar{
+    position: absolute;
+    margin: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    height:30px;
+    width: 30px;
+}
+
+
+
+/*Section 2*/
+
+#markerBox{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 15%;
+    left: 10%;
+}
+
+p.section1{
+    position: relative;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 1.5em;
+    line-height: 1.5;
+    max-width: 600px;
+    top: 35%;
+}
+
+.outer {
+  width: 1px;
+  height: 100%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  right: 50%;
+  top: 52.5%;
+}
+.inner {
+  position: relative;
+  width:100%;
+  height: 95%;
+  background: black;
+}
+
+#rBox{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    bottom: 40%;
+    left: 75%;
+}
+.bazaar{
+    position: absolute;
+    margin: 0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    width: 581px;
+    height: 120px;
+}
+
+#info1{
+    height: 10em;
+    position: relative;
+    width:400px;
+    height:auto;
+    bottom: 50%;
+    left: 64%;
+    text-align: center;
+    
+}
+
+#info2{
+    height: 10em;
+    position: relative;
+    width:300px;
+    height: auto;
+    bottom: 20%;
+    left: 66.5%;
+    text-align: center;
+}
+
+.infoStyle{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+#markerBoxFull{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 15%;
+    left: 15%;
+}
+
+.number{
+    position: absolute;
+    text-align: left;
+    font-size: 8em;
+    padding-left: 15%;
+    line-height: 1.5;
+    max-width: 600px;
+    top: 74%;
+}
+
+.section2{
+    position: absolute;
+    text-align: left;
+    font-size: 1.5em;
+    padding-left: 10%;
+    line-height: 1.5;
+    max-width: 600px;
+    top: 70%;
+    left: 13%;
+    font-weight: 500;
+}
+
+.bigWeight{
+    font-weight: 500;
+}
+
+.howBody{
+    position: absolute;
+    text-align: left;
+    font-size: 1.5em;
+    padding-left: 10%;
+    line-height: 1.5;
+    max-width: 600px;
+    top: 8.5%;
+    left: 48%;
+    font-weight: 500;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.unicode{
+    font-family: "Times New Roman";
+    position: absolute;
+    top: 270px;
+    right: 223px;
+}
+
+.thumbnail{
+    position: absolute;
+    padding-left: 10%;
+    line-height: 1.5;
+    width: 600px;
+    height: 420px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    top: 53.5%;
+    left: 58%;
+}
+
+
+
+/*
+img{
+    position: absolute;
+    top:0;
+    left:0;
+    object-fit: cover;
+}
+.parallax{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+}
+  .parallax-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+	  background-repeat: no-repeat;
+    }
+    .parallax-layer__1{
+      background-image: url(phantom_star.png);
+      background-size: cover;
+    }
+    .parallax-layer__2{
+      background-image: url(phantom_star.png);
+    }
+   .parallax-layer__3{
+      background-image: url(phantom_star.png);
+    }
+
+    .parallax-layer__4{
+          background-image: url(phantom_star.png);
+        }
+
+    .parallax-layer__35
+          background-image: url(phantom_chrome.png);
+        }
+*/
+
+  
+
+
+
+/*Bouncy balls*/
+
+/*
+.ball {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  position: relative;
+  background: radial-gradient(circle at bottom, #81e8f6, #76deef 10%, #055194 80%, #062745 100%); }
+  .ball:before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    background: radial-gradient(circle at top, white, rgba(255, 255, 255, 0) 58%);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    z-index: 2; }
+  .ball:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    z-index: 2;
+    -webkit-transform: rotateZ(-30deg);
+    transform: rotateZ(-30deg); }
+  .ball .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    -webkit-transform: rotateX(90deg) translateZ(-160px);
+    transform: rotateX(90deg) translateZ(-160px);
+    z-index: 1; }
+  .ball.plain {
+    background: black; }
+    .ball.plain:before, .ball.plain:after {
+      display: none; }
+  .ball.bubble {
+    background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
+    -webkit-animation: bubble-anim 2s ease-out infinite;
+    animation: bubble-anim 2s ease-out infinite; }
+    .ball.bubble:before {
+      -webkit-filter: blur(0);
+      filter: blur(0);
+      height: 80%;
+      width: 40%;
+      background: radial-gradient(circle at 130% 130%, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 58%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+      -webkit-transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg);
+      transform: translateX(131%) translateY(58%) rotateZ(168deg) rotateX(10deg); }
+    .ball.bubble:after {
+      display: block;
+      background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 74%, white 80%, white 84%, rgba(255, 255, 255, 0) 100%); }
+
+.stage {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  margin: 20px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+body {
+  width: 300px;
+  margin: 20px auto;
+  background: linear-gradient(to bottom, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
+  background-repeat: no-repeat;
+}
+
+@-webkit-keyframes bubble-anim {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  20% {
+    -webkit-transform: scaleY(0.95) scaleX(1.05);
+    transform: scaleY(0.95) scaleX(1.05); }
+
+  48% {
+    -webkit-transform: scaleY(1.1) scaleX(0.9);
+    transform: scaleY(1.1) scaleX(0.9); }
+
+  68% {
+    -webkit-transform: scaleY(0.98) scaleX(1.02);
+    transform: scaleY(0.98) scaleX(1.02); }
+
+  80% {
+    -webkit-transform: scaleY(1.02) scaleX(0.98);
+    transform: scaleY(1.02) scaleX(0.98); }
+
+  97%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes bubble-anim {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  20% {
+    -webkit-transform: scaleY(0.95) scaleX(1.05);
+    transform: scaleY(0.95) scaleX(1.05); }
+
+  48% {
+    -webkit-transform: scaleY(1.1) scaleX(0.9);
+    transform: scaleY(1.1) scaleX(0.9); }
+
+  68% {
+    -webkit-transform: scaleY(0.98) scaleX(1.02);
+    transform: scaleY(0.98) scaleX(1.02); }
+
+  80% {
+    -webkit-transform: scaleY(1.02) scaleX(0.98);
+    transform: scaleY(1.02) scaleX(0.98); }
+
+  97%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+
+*/
+
+
+/** {box-sizing:border-box}*/
+
+
