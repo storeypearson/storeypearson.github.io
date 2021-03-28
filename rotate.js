@@ -1,47 +1,41 @@
-$(document).ready(function () {
-    var $one = $('.move'),
-        $two = $('.move'),
-        $three = $('.move');
-        browserPrefix = "",
-        usrAg = navigator.userAgent;
-    if(usrAg.indexOf("Chrome") > -1 || usrAg.indexOf("Safari") > -1) {
-        browserPrefix = "-webkit-";
-    } else if (usrAg.indexOf("Opera") > -1) {
-        browserPrefix = "-o";
-    } else if (usrAg.indexOf("Firefox") > -1) {
-        browserPrefix = "-moz-";
-    } else if (usrAg.indexOf("MSIE") > -1) {
-        browserPrefix = "-ms-";
-    }
-    
-    $(document).mousemove(function (event) {
-        var cx = Math.ceil(window.innerWidth / 2.0),
-            cy = Math.ceil(window.innerHeight / 2.0),
-            dx = event.pageX - cx,
-            dy = event.pageY - cy,
-            tiltx = (dy / cy) * 50,
-            tilty = - (dx / cx) * 50,
-            radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2)),
-            degree = (radius * 15);
-//            degree = (1.5);
-        console.log(degree)
-        
-//            shadx = degree*tiltx;   /*horizontal shadow*/
-//            shady = degree*tilty;   /*vertical shadow*/
-
-        $one.css(browserPrefix + 'transform', 'translate(' + tiltx + 'px, ' + tilty + 'px)');
-
+//$(document).ready(function () {
+//    var $one = $('.move'),
+//        browserPrefix = "",
+//        usrAg = navigator.userAgent;
+//    if(usrAg.indexOf("Chrome") > -1 || usrAg.indexOf("Safari") > -1) {
+//        browserPrefix = "-webkit-";
+//    } else if (usrAg.indexOf("Opera") > -1) {
+//        browserPrefix = "-o";
+//    } else if (usrAg.indexOf("Firefox") > -1) {
+//        browserPrefix = "-moz-";
+//    } else if (usrAg.indexOf("MSIE") > -1) {
+//        browserPrefix = "-ms-";
+//    }
+//    
+//    $(document).mousemove(function (event) {
+//        var cx = Math.ceil(window.innerWidth / 2.0),
+//            cy = Math.ceil(window.innerHeight / 2.0),
+//            dx = event.pageX - cx,
+//            dy = event.pageY - cy,
+//            tiltx = (dy / cy) * 50,
+//            tilty = - (dx / cx) * 50,
+//            radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2)),
+//            degree = (radius * 15);
+//        console.log(degree)
+//        
+//        $one.css(browserPrefix + 'transform', 'translate(' + tiltx + 'px, ' + tilty + 'px)');
+//
 //        $one.css(browserPrefix + 'transform', 'translate(' + tiltx + 'px, + ', ' + 'deg)');
 //        $two.css(browserPrefix + 'transform', 'translate('+ degree + 'deg)');
-
+//
 //        $one.css(browserPrefix + 'transform', 'rotate(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
 //        $two.css(browserPrefix + 'transform', 'rotate(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
-
+//
 //        if(dx>cx) /*without that horizontal values are reversed*/
 //            $('#div1, #div2').css('box-shadow', + (-shady) + 'px ' + (-shadx) +'px 5px #3D352A');
 //        else $('#div1, #div2').css('box-shadow', + shady + 'px ' + (-shadx) +'px 5px #3D352A');
-    });
-});
+//    });
+//});
 
 
 
