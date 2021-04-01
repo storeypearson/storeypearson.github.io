@@ -44,13 +44,14 @@ canvas {
      width: 200%;
     height: 200%;
     overflow:hidden;
+    position:fixed;
 
 }
-div {position:fixed;}
 
 .bg {
   width:100%; 
   height:100%;
+    position:fixed;
 /*    background: radial-gradient(ellipse at center top, #00ff1f 0%, #3ffbeb 35%, #143eff 77%, #826aff 84%, #003fff 86%) 100% no-repeat;*/
    }
 
@@ -398,6 +399,46 @@ p.section1{
   top: 52.5%;
 }
 
+.outer4 {
+  width: 1px;
+  height: 100%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  right: 0%;
+  top: 52.5%;
+}
+
+.outer5 {
+  width: 1px;
+  height: 100%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  right: 0%;
+  top: 52.5%;
+}
+
+.outer6 {
+  width: 1px;
+  height: 100%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  right: 0%;
+  top: 52.5%;
+}
+
+.outer7 {
+  width: 1px;
+  height: 100%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  right: 0%;
+  top: 52.5%;
+}
+
 .inner {
   position: relative;
   width:100%;
@@ -473,6 +514,8 @@ p.section1{
     font-weight: 500;
 }
 
+/*Section 3*/
+
 .arrow-section2{
     width: 100px;
     height: auto;
@@ -503,14 +546,25 @@ p.section1{
     width:200px;
     height:200px;
     top: 10%;
-    left: 10%;
+    left: 9%;
+}
+
+#stormi{
+    position: absolute;
+    text-align: left;
+    font-size: 1.8em;
+    padding-left: -5%;
+    line-height: 1.4;
+    max-width: 700px;
+    top: 15%;
+    left: 9%;
 }
 
 .number{
     position: absolute;
     text-align: left;
     font-size: 8em;
-    padding-left: 15%;
+    padding-left: 10%;
     line-height: 1.5;
     max-width: 600px;
     top: 74%;
@@ -519,23 +573,23 @@ p.section1{
 .section2{
     position: absolute;
     top: 70%;
-    left: 13%;
+    left: 14%;
     font-weight: 500;
 }
 
 #block{
     position: absolute;
-    top: 73%;
-    left: 20%;
+    top: 70.5%;
+    left: 14%;
     font-weight: 500;
 }
 
 .left-text{
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding-left: 10%;
-    line-height: 1.5;
-    max-width: 600px;
+    line-height: 1.4;
+    max-width: 700px;
     font-weight: 500;
 }
 
@@ -543,15 +597,15 @@ p.section1{
     font-weight: 500;
 }
 
-.howBody{
+.right-text{
     position: absolute;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding-left: 10%;
-    line-height: 1.5;
-    max-width: 600px;
+    line-height: 1.4;
+    max-width: 700px;
     top: 8.5%;
-    left: 48%;
+    left: 43%;
     font-weight: 500;
 }
 
@@ -559,23 +613,175 @@ p.section1{
     font-weight: 700;
     font-size: 1.8em;
 }
-.unicode{
-    font-family: "Times New Roman";
-    position: absolute;
-    top: 270px;
-    right: 223px;
-}
 
 .thumbnail{
     position: absolute;
     padding-left: 10%;
     line-height: 1.5;
-    width: 600px;
+    width: 700px;
     height: 420px;
     border: 1px solid black;
     box-sizing: border-box;
     top: 53.5%;
-    left: 58%;
+    left: 53%;
+}
+
+/*Section 4*/
+#block2{
+    position: absolute;
+    top: 74.5%;
+    left: 14.5%;
+    font-weight: 500;
+}
+
+/*Section 5*/
+.numberTop{
+    position: absolute;
+    text-align: left;
+    font-size: 8em;
+    padding-left: 15%;
+    line-height: 1.5;
+    max-width: 600px;
+    top: -6%;
+    left: -9%;
+}
+
+#block3{
+    position: absolute;
+    top: 58%;
+    left: 14.5%;
+    font-weight: 500;
+}
+
+#markerRight{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 10%;
+    left: 88%;
+}
+
+#marker3{
+    height: 10em;
+    position: absolute;
+    width:200px;
+    height:200px;
+    top: 10%;
+    left: 78%;
+}
+
+#marker4{
+    height: 10em;
+    position: absolute;
+    width:200px;
+    height:200px;
+    top: 10%;
+    left: 14%;
+}
+
+#marker2{
+    height: 10em;
+    position: absolute;
+    width:200px;
+    height:200px;
+    top: 10%;
+    left: 83%;
+}
+
+/*About section*/
+#blockAbout{
+   position: absolute;
+    top: 45%;
+    left: 14.5%;
+    font-weight: 500;
+    width: 700px;
+}
+
+
+#blockAbout2{
+    position: absolute;
+    top: 3%;
+    left: 53%;
+}
+
+.about-right{
+    width: 700px;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.aboutTitle{
+    position: absolute;
+    text-align: left;
+    font-size: 8em;
+    padding-left: 15%;
+    line-height: 1.5;
+    max-width: 600px;
+    top: -6%;
+    left: -9%;
+    font-weight: 500;
+}
+
+
+
+/*Section 6*/
+#block4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:700px;
+    transform: translate(-50%, -50%);
+}
+
+#arrowBox{
+    position: absolute;
+    bottom: 10%;
+    left: 80%;
+}
+
+
+#arrowBig{
+    position: absolute;
+    z-index:1;
+    width: 200px;
+    height: auto;
+}
+
+#lastTitle{
+   position: absolute;
+    top: 54%;
+    left: 67%;
+    width:700px;
+}
+
+.title{
+   font-weight: 500; 
+    font-size: 3em
+}
+
+.endStar{
+    position: absolute;
+    top: 80%;
+    left: 59%;
+    width: 250px;
+    height: 250px;
+}
+
+.endStar2{
+    position: absolute;
+    top: 80%;
+    left: 72%;
+    width: 250px;
+    height: 250px;
+}
+
+.endStar3{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    width: 250px;
+    height: 250px;
 }
 
 
