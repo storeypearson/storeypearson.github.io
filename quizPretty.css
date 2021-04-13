@@ -298,6 +298,7 @@
   letter-spacing:1px;
   text-align: center;
   font-size: 4em;
+    z-index: 1;
 }
 
 /*
@@ -333,6 +334,7 @@
   letter-spacing:1px;
   width: 100%;
   text-align: center;
+    z-index: 1;
 }
 
 .container {
@@ -424,87 +426,96 @@ input[type="checkbox"]:checked + label:before {
     position: absolute;
     width: 150px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 88.4%;
+    top: 40%;
 }
 
 #laughOuter2{
     position: absolute;
-    width: 150px;
+    width: 240px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 22%;
+    top: 40%;
 }
 
 #laughOuter3{
     position: absolute;
-    width: 150px;
+    width: 210px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 0;
+    top: 44%;
 }
 
 #laughOuter4{
     position: absolute;
-    width: 150px;
+    width: 130px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 40%;
+    top: 53%;
 }
 
 #laughOuter5{
     position: absolute;
     width: 150px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 80%;
+    top: 10%;
 }
 
 #laughOuter6{
     position: absolute;
-    width: 150px;
+    width: 280px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 15%;
+    top: 10%;
 }
 
 #laughOuter7{
     position: absolute;
-    width: 150px;
+    width: 240px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 66%;
+    top: 20%;
 }
 
 #laughOuter8{
     position: absolute;
-    width: 150px;
+    width: 351px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 60%;
+    top: 60%;
 }
 #laughOuter9{
     position: absolute;
-    width: 150px;
+    width: 280px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 12%;
+    top: 79%;
 }
 
 #laughOuter10{
     position: absolute;
-    width: 150px;
+    width: 200px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 40%;
+    top: 77%;
 }
 
 #laughOuter11{
     position: absolute;
-    width: 150px;
+    width: 180px;
     height: auto;
-    left: 152px;
-    top: -58px;
+    left: 45%;
+    top: 5.7%;
+}
+
+
+#laughOuter13{
+    position: absolute;
+    width: 180px;
+    height: auto;
+    left: 45%;
+    top: 5.7%;
 }
 
 

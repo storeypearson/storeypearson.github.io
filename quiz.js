@@ -100,7 +100,7 @@ let currentIndex = Number($('.quiz__step--current').attr('data-question'));
 
 //REload Quiz
  $(".btn").click(function() {
-      leftPress()
+     leftPress()
      leftPress()
      leftPress()
      leftPress()
