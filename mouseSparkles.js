@@ -1,12 +1,10 @@
+var colour = "random"; // "random" can be replaced with any valid colour ie: "red"...
+var sparkles = 300;// increase of decrease for number of sparkles falling
 
-
-var colour="random"; // "random" can be replaced with any valid colour ie: "red"...
-var sparkles=100;// increase of decrease for number of sparkles falling
-
-var x=ox=400;
-var y=oy=300;
-var swide=800;
-var shigh=600;
+var x = ox=400;
+var y = oy=300;
+var swide = 800;
+var shigh = 1000;
 var sleft=sdown=0;
 var tiny=new Array();
 var star=new Array();
@@ -260,3 +258,6 @@ function newColour() {
 	return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
 }
 // ]]>
+
+
+//confetti!!

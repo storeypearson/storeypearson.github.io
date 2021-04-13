@@ -21,21 +21,17 @@
 //            tilty = - (dx / cx) * 50,
 //            radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2)),
 //            degree = (radius * 15);
-//        console.log(degree)
+////        console.log(degree)
 //        
 //        $one.css(browserPrefix + 'transform', 'translate(' + tiltx + 'px, ' + tilty + 'px)');
 //
-//        $one.css(browserPrefix + 'transform', 'translate(' + tiltx + 'px, + ', ' + 'deg)');
-//        $two.css(browserPrefix + 'transform', 'translate('+ degree + 'deg)');
+//        $one.css(browserPrefix + 'transform', 'translate(' + tiltx + 'px,' + ', ' + 'deg)');
 //
 //        $one.css(browserPrefix + 'transform', 'rotate(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
-//        $two.css(browserPrefix + 'transform', 'rotate(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
 //
-//        if(dx>cx) /*without that horizontal values are reversed*/
-//            $('#div1, #div2').css('box-shadow', + (-shady) + 'px ' + (-shadx) +'px 5px #3D352A');
-//        else $('#div1, #div2').css('box-shadow', + shady + 'px ' + (-shadx) +'px 5px #3D352A');
-//    });
 //});
+//    });
+
 
 
 

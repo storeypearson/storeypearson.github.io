@@ -8,26 +8,26 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
          <link rel="stylesheet" type="text/css" href="quizPretty.css"/>
         
-                
+<!--
+Things to fix
+-svg glitchy :hover. want it to show a circle behind it
+-svg button follow scroll so it's always in the window
+-Again button trigger reload
+-confetti on last section
+-Apply grid to other question sections               
+-->
 
 <!--Effect scripts-->
         
       
 
 <!--         <script src="gradientMove.js" type="text/javascript"></script>-->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.0/parallax.min.js"></script>
     <script type="text/javascript" src="rotate.js"></script>
-    <script type="text/javascript" src="mouseSparkles.js"></script>
-
+        <script type="text/javascript" src="mouseSparkles.js"></script>
+        
        
-                
-       
-
-<!--        
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenLite.min.js" type=text/javascript></script>       
--->
-
 
 
         
@@ -38,7 +38,13 @@
         
 <!--Section 1 HP-->		
 <div id="container">
-        
+    
+        <a href="#quizStart" data-menu-top="12500">
+           <div id="buttonContainer">
+               <p class="buttonQuiz">What celebrity are you?</p>
+            </div>
+            </a>
+             
         <div class="bg one"
 			data-0="transform:translate3d(0%,0%,0); opacity:1" 	
 			data-5000="transform:translate3d(-100%,0%,0); opacity:1">
@@ -124,7 +130,7 @@
         <div id="markerBox"> 
             <img class="medStar" src="phantom_star.png"/>
             </div>
-            
+                        
             <p class="section1">
             What is Phantom? 
             <br>
@@ -148,32 +154,30 @@
             </div>
 
             <div id="info1">     
-                <p class="infoStyle">If you want to purchase the game &#8628; &#10041;Disclaimer you can't buy the game 
-                </p>   
-            </div> 
+                <p id="infoStyle">So you want to buy the game... &#9758;Disclaimer you can't</p>   
+            </div>      
+    
             
-            <div id="placeholderBox">
-                <img class="placeholder" src="placeholder.png">
-            </div>
+         <a href="#nav" data-menu-top="20000"> 
+            <button class="buttonNext" type="button" data-hover="&#128073;
+ &#128073;
+ &#128073;
+" data-active="I'M ACTIVE"><span>&#10022; LEARN MORE ABOUT THE PROJECT &#10022;</span></button>
+        </a>
+            
+<!--
+<button id="confetti" class="ready" onclick="clickButton();">
+  
+  <div class="submit submitMessage">
+     <span class="button-text">Submit</span>
+  </div>
 
-            <div id="info2">     
-                <p class="infoStyle">Learn more about the project
-                </p>
-            </div> 
-            
-         
-            <div id="arrow-position">
-                <img class="arrow-section2" src="bright-arrow-long.png"/>
-            </div>
-          
+</button>
 
-            <div id="info3">
-              <p class="infoStyle">Take the quiz</p>
-            </div>
+<canvas id="canvas"></canvas>
             
-            <div id="arrow-position2">
-                <img class="arrow-section2" src="bright-arrow-long.png"/>
-            </div>
+-->
+        
             
             <div class="outer2">
                 <div class="inner"></div>
@@ -206,20 +210,20 @@
             
             
         <div id="block">
-            <h2 class="left-text">
-                Introducing our first card game Phantom’s Bazaar!<br> Have you ever wondered what happened to Kanye’s bag of air or how you’d book a dance lesson with Matthew Morrison for your enemies? Neither have we — but in this game, you can own one of you favorite celebrities possessions at the low <strong>LOW</strong> cost of your dignity. 
-            </h2>
+            <p class="left-text">
+                <span class="bold">Introducing the Phantom’s Bazaar game!</span><br> &nbsp;&nbsp;&nbsp;&nbsp;Have you ever wondered what happened to Kanye’s bag of air, or how you’d book a dance lesson with Matthew Morrison for your enemies? Neither have we — but in this game, you can own one of you favorite celebrities' possessions at the low <strong>LOW</strong> cost of your dignity. 
+            </p>
         </div>
             
-            <h2 class="right-text">
+            <p class="right-text">
                 <span class="bold">How to Play</span>
                 <br>
-                Imagine you’re rich enough to be able to afford  a celebrities’ dirty and used items. If you can't, don't love that for you...
+                &nbsp;&nbsp;&nbsp;&nbsp;Imagine you’re rich enough to be able to afford  a celebrities’ dirty and used items. If you can't, don't love that for you...
                 <br>
-                The object of the game is to auction any of the cards in your hand you don’t want, decieve your buyer, and blind bid on items based on their value. The player with the most points in their hand at the end of the game wins. Unlike most things, in this game it’s okay to lie.
+                In Phantom's Bazaar, valueless items are commodified and one-of-a-kind items are worth little to none.
                 <br>
                 Still confused? Continue to the next page.   
-            </h2>
+            </p>
             
             <div class="thumbnail"></div>
             
@@ -238,20 +242,16 @@
             <div id="markerBoxFull"> 
                 <img class="medStar" src="phantom_star.png"/>
             </div>
-        
-            <div id="marker4"> 
-                <img class="medStar" src="phantom_star.png"/>
-            </div>
             
-                <h1 class="number bigWeight">02</h1>
+                <h1 class="number2 bigWeight">02</h1>
         
             
             <div id="block2">
-                <h2 class="left-text">
+                <p class="left-text">
                     <br>
-                    The object of the game is to auction any of the cards in your hand you don't want, decieve your buyer, and blind bid on items based on their value. The player with the most points in their hand at the end wins. In this game it's okay to lie.
+                    The object of the game is to auction any of the cards in your hand you don't want, decieve your buyer, and blind bid on items based on their value. The player with the most points in their hand at the end wins. Throw out your moral compass because in this game, it's okay to lie.
                     <br>  
-                </h2>
+                </p>
            </div>
         
         <h2 class="right-text">
@@ -274,40 +274,32 @@
 			data-20000="transform:translate3d(0%,0%,0);opacity:1"
 			data-25000="transform:translate3d(-100%,0%,0);opacity:1">
             
-            <h1 class="number bigWeight">03</h1>
+            <h1 class="number3 bigWeight">03</h1>
         
-             <div id="markerRight"> 
-                <img class="medStar" src="phantom_star.png"/>
-            </div>
-        
-            <div id="marker2"> 
-                <img class="medStar" src="phantom_star.png"/>
-            </div>
-        
-            <div id="marker3"> 
+             <div id="markerBoxFull"> 
                 <img class="medStar" src="phantom_star.png"/>
             </div>
             
             <div id="block3">
-                <h2 class="left-text">
+                <p class="left-text">
                     <br>
                     
-                    The Buyer
+                    <span class="bold">The Buyer</span>
                     <br>
                     To bid on an item card, buyers ask sellers questions to deduct if the information has value. Buyers use chips to purchase cards and CANNOT trade their item cards for auction items. Once the seller says "Sold", buyers place the payment in the pot for the house to collect.
 
                     If you don't auction during the round, at the end of the round, any remaining chips are deducted from your point total.
                     <br>  
-                </h2>
+                </p>
            </div>
         
-        <h2 class="right-text">
+        <p class="right-text">
                 <span class="bold">The Seller</span>
             <br>
             To auction an item card, place the card in your card holder with the item side facing you (shown in the picture below). This indicates that the item is up for auction. Once doing so, you cannot take back the card. Sellers can describe the item but cannot include words in the title. E.g. when describing the object, ‘John Lennon’s Tooth’ you can say something like, “It was sculpted by God”.
 
             When the item is sold, the seller must yell “Sold” to indicate the auction period has ended. Until then, the auction remains open.
-            </h2>
+            </p>
             
             <div class="thumbnail"></div>
             
@@ -327,7 +319,7 @@
         
     
               <div id="arrowBox">
-            <img id="arrowBig" src="bright-arrow-long.png"/>
+            <h2 class="arrowBig">✦</h2>
         </div>
         
         <div id="lastTitle">
@@ -335,13 +327,13 @@
         </div>
         
         <div id="block4">
-            <h2 class="left-text">
+            <p class="left-text">
                 <br>
                  Test your self awareness by taking a quiz made up of generic answers!
 
-                 Send the link to friends to make them feel they’ve done something productive.
+                 Send the link to friends to make them feel they’ve done something productive. 
                 <br>  
-            </h2>
+            </p>
            </div>
         
         <div class="outer7">
@@ -349,6 +341,7 @@
             </div>
         
         </div>
+    
     
 
     <!--Section 7 Intro to Quiz-->
@@ -358,24 +351,26 @@
             data-35000="transform:translate3d(-100%,0%,0);opacity:1">
         
            <div class="container">
+            <h2 id="quizStart" data-menu-offset="1000"></h2>
   
   <form class="quiz">
 
     <div class="quiz__inner">
     <div data-question="1" class="quiz__step--1 quiz__step--current quiz__step">
       <h1 class="quiz__question">What's your favorite season?</h1>
-      <div class="answer">
-          
+     
+        <div class="answer grid-one"> 
         <input data-char="65" class="answer__input" type="checkbox" id="fall_yes" name="fall" value="No">
-        <label  class="answer__label" for="fall_yes">Fall
-        
-       </label>
-      </div>
-          <div id="quizImgOuter">
+        <label  class="answer__label" for="fall_yes">
+ Fall</label>
+            <div id="quizImgOuter">
             <img class="quizImg1" src="britney.png">
           </div>  
-
-      <div class="answer">
+      </div>
+        
+        
+    
+      <div class="answer grid-two">
         <input data-char="66" class="answer__input" type="checkbox" id="winter_yes" name="winter" value="">
         <label class="answer__label" for="winter_yes">Winter</label>
           <div id="quizImgOuter2">
@@ -383,7 +378,7 @@
           </div>
       </div>
         
-      <div class="answer">
+      <div class="answer grid-three">
         <input data-char="67" class="answer__input" type="checkbox" id="spring_yes" name="spring" value="Yes">
         <label class="answer__label" for="spring_yes">Spring</label>
           <div id="quizImgOuter3">
@@ -391,7 +386,7 @@
           </div>
       </div> 
         
-      <div class="answer">
+      <div class="answer grid-four">
         <input data-char="67" class="answer__input" type="checkbox" id="summer_yes" name="summer" value="Yes">
         <label class="answer__label" for="summer_yes">Summer</label>
           <div id="quizImgOuter4">
@@ -401,9 +396,11 @@
       </div>   
     </div>
         
+        
+        
 <div data-question="2" class="quiz__step--2 quiz__step">
       <h1 class="quiz__question">Pick your favorite weather</h1>
-      <div class="answer">
+      <div class="answer grid-one">
         <input  class="answer__input" type="checkbox" id="sunny_yes" name="sunny" value="Yes">
         <label  class="answer__label" for="sunny_yes">Sunny</label>
           <div id="quizImgOuter5">
@@ -411,7 +408,7 @@
           </div>
       </div>
     
-    <div class="answer">
+    <div class="answer grid-two">
         <input  class="answer__input" type="checkbox" id="cloudy_yes" name="cloudy" value="Yes">
         <label  class="answer__label" for="cloudy_yes">Cloudy</label>
           <div id="quizImgOuter6">
@@ -419,7 +416,7 @@
           </div>
       </div>
     
-    <div class="answer">
+    <div class="answer grid-three">
         <input  class="answer__input" type="checkbox" id="snowy_yes" name="snowy" value="Yes">
         <label  class="answer__label" for="snowy_yes">Snowy</label>
             <div id="quizImgOuter7">
@@ -427,7 +424,7 @@
           </div>
       </div>
     
-      <div class="answer">
+      <div class="answer grid-four">
         <input class="answer__input" type="checkbox" id="rainy_yes" name="rainy" value="Yes">
         <label class="answer__label" for="rainy_yes">Rainy<div class="answer__tick">
     <svg width="14" height="14" viewBox="0 0 24 24">
@@ -443,7 +440,7 @@
         
 <div data-question="3" class="quiz__step--3 quiz__step">
       <h1 class="quiz__question">What's your favorite seasonal activity?</h1>
-      <div class="answer">
+      <div class="answer grid-one">
         <input  class="answer__input" type="checkbox" id="apples_yes" name="apples" value="Yes">
         <label  class="answer__label" for="apples_yes">Apple picking</label>
           <div id="quizImgOuter9">
@@ -451,7 +448,7 @@
           </div>
       </div>
     
-      <div class="answer">
+      <div class="answer grid-two">
         <input class="answer__input" type="checkbox" id="picnic_yes" name="picnic" value="Yes">
         <label class="answer__label" for="picnic_yes">Going on a picnic<div class="answer__tick">
     <svg width="14" height="14" viewBox="0 0 24 24">
@@ -463,7 +460,7 @@
           </div>
       </div> 
     
-     <div class="answer">
+     <div class="answer grid-three">
         <input  class="answer__input" type="checkbox" id="ski_yes" name="ski" value="Yes">
         <label  class="answer__label" for="ski_yes">Skiing</label>
          <div id="quizImgOuter11">
@@ -471,7 +468,7 @@
           </div>
       </div>
     
-     <div class="answer">
+     <div class="answer grid-four">
         <input  class="answer__input" type="checkbox" id="beach_yes" name="beach" value="Yes">
         <label  class="answer__label" for="beach_yes">Going to the beach</label>
          <div id="quizImgOuter12">
@@ -482,7 +479,7 @@
         
     <div data-question="4" class="quiz__step--4 quiz__step">
       <h1 class="quiz__question">In what season were you born?</h1>
-      <div class="answer">
+      <div class="answer grid-one">
         <input  class="answer__input" type="checkbox" id="jan_yes" name="jan" value="Yes">
         <label  class="answer__label" for="jan_yes">Winter (Dec., Jan., Feb.)</label>
           <div id="quizImgOuter13">
@@ -490,7 +487,7 @@
           </div>
       </div>
         
-      <div class="answer">
+      <div class="answer grid-two">
         <input class="answer__input" type="checkbox" id="mar_yes" name="mar" value="Yes">
         <label class="answer__label" for="mar_yes">Spring (Mar., Apr., May)<div class="answer__tick">
     <svg width="14" height="14" viewBox="0 0 24 24">
@@ -502,7 +499,7 @@
           </div>
       </div> 
         
-     <div class="answer">
+     <div class="answer grid-three">
         <input  class="answer__input" type="checkbox" id="jun_yes" name="jun" value="Yes">
         <label  class="answer__label" for="jun_yes">Summer (Jun., Jul.., Aug)</label>
          <div id="quizImgOuter15">
@@ -510,7 +507,7 @@
           </div>
       </div>
         
-     <div class="answer">
+     <div class="answer grid-four">
         <input  class="answer__input" type="checkbox" id="sep_yes" name="sep" value="Yes">
         <label  class="answer__label" for="sep_yes">Autumn (Sep., Oct., Nov.)</label>
          <div id="quizImgOuter16">
@@ -521,7 +518,7 @@
    
   <div data-question="5" class="quiz__step--5 quiz__step">
       <h1 class="quiz__question">What color season are you?</h1>
-      <div class="answer">
+      <div class="answer grid-one">
         <input  class="answer__input" type="checkbox" id="bright_yes" name="bright" value="Yes">
         <label  class="answer__label" for="bright_yes">Bright Warms</label>
           <div id="quizImgOuter17">
@@ -529,7 +526,7 @@
           </div>
       </div>
       
-      <div class="answer">
+      <div class="answer grid-two">
         <input class="answer__input" type="checkbox" id="cool_yes" name="cool" value="Yes">
         <label class="answer__label" for="cool_yes">Rich cools
             <div class="answer__tick">
@@ -542,7 +539,7 @@
           </div>
       </div> 
       
-     <div class="answer">
+     <div class="answer grid-three">
         <input  class="answer__input" type="checkbox" id="dark_yes" name="dark" value="Yes">
         <label  class="answer__label" for="dark_yes">Dark Warms</label>
          <div id="quizImgOuter19">
@@ -550,7 +547,7 @@
           </div>
       </div>
       
-     <div class="answer">
+     <div class="answer grid-four">
         <input  class="answer__input" type="checkbox" id="muted_yes" name="muted" value="Yes">
         <label  class="answer__label" for="muted_yes">Muted Cools</label>
          <div id="quizImgOuter20">
@@ -559,13 +556,16 @@
       </div>
     </div>       
         
-<div data-question="6" class="quiz__step--6 quiz__step quiz__summary">
+<div data-question="6" class="quiz__step--6 quiz__step">
   
     <h1 class="quiz__end">You are</h1>
         <div id="end"></div>
             <div class="submit__container">
-                <a href="#" class="btn reset" onClick="window.location.reload()"><span>Again?</span></a>
+                <h2 class="btn" onClick="jumpToQuiz()" data-menu-top="3000">Again?</h2>
+ 
             </div>
+    
+    
                 <img id="laughOuter" src="laugh.jpg"/>
                 <img id="laughOuter2" src="laugh2.jpg"/>
                 <img id="laughOuter3" src="laugh3.png"/>
@@ -588,13 +588,16 @@
   <div class="progress">
     <div class="progress__inner"></div>
   </div>
-  <div class="navigation">
-    <img class="navigation__btn navigation__btn--left" src="bright-left.png"/>
-    <img class="navigation__btn navigation__btn--right" src="bright-left.png"/>
-  </div>
   </section>  
 </footer>
         
+    <div class="navigation">
+        <div class="navOutline">
+<!--    <h2 class="navigation__btn navigation__btn--left">✦</h2>-->
+            
+    <h2 class="navigation__btn navigation__btn--right">✦</h2>
+  </div>
+        </div>  
         <div class="outer6">
                 <div class="inner"></div>
             </div>
@@ -614,39 +617,35 @@
 			data-30000="transform:translate3d(100%,0%,0); opacity:1" 	
 			data-35000="transform:translate3d(0%,0%,0);opacity:1" 
       >
-    
-     <h2 class="aboutTitle">About</h2>
+        <div id="handOutline">
+            <h2 id="hand">👋🏼</h2>
+        </div>
+        
+  
     
         
-        <div id="blockAbout">    
-            <h2 class="left-text">
+        <div id="blockAbout2">    
+            <p class="left-text" id="nav" data-menu-offset="210000">
             Who?   
+                <br>
+            Phantom's Bazaar is a project designed by Storey Pearson for the Communication Design Thesis Course at Parsons School of Design.
             <br>
-            Phantom's Bazaar is a project designed by Storey Pearson for the Communication Design thesis course at Parsons School of Design.
-            <br><br>    
-            It’s designed for young adults who are susceptible to aimless scrolling, and technology-minded adults. 
-            <br><br>    
-            The Phantom's Bazaar PDF is open to everyone at no cost. You can access the link here at any time.
-            <br><br>    
-            However you made it, thanks for participating.
-                </h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;It’s designed for young adults who are susceptible to aimless scrolling, and technology-minded adults.
+                 <br><br>
+                Click the link for the PDF of the game.
+            <br>  
+           
+                
+                </p>
             </div>
         
-       <div id="blockAbout2">
-        <h2 class="about-right">
+       <div id="blockAbout">
+        <p class="about-right">
             Why?
             <br>
-            Society loves celebrities but instead of defining the problem, we laugh it off because, at the end of the day, how much does it affect our lives? Though there is an understanding that celebrities lives are unrealistic, many people buy into the world. Even though celebrities will always exist, the project was created to encourage users to take an honest accounting on how they choose to spend their time. From buying something on Instagram you were baited into, choosing which news source to believe, and cycling through the same TikTok trend; these decisions are ultimately manipulated by an algorithm. Without doing so, the consequence is believing everything we see online is the truth, and our perceptions and opinions can be altered by algorithms.    
-        </h2>
+            Society loves celebrities but instead of defining the problem, we laugh it off because, at the end of the day, how much does it affect our lives? Celebrities are equally good and bad. Though there is an understanding that celebrities lives are unrealistic, we'll love them until one day they're being cancelled on Twitter. <br>&nbsp;&nbsp;&nbsp;&nbsp;The project was created to encourage users — like yourself — to take an honest accounting on how you choose to spend your time. From buying something on Instagram you were baited into, choosing which news source to believe, and cycling through the same TikTok trend; these decisions are ultimately manipulated by an algorithm. It's difficult to do even when being alert about these issues. However, the consequence is believing everything we see online is the truth; and because of this, perceptions and opinions can be altered.    
+        </p>
       </div>
-        
-        <img class="biggestStar endStar" src="chrome-star-bright.png">
-        
-<!--         <img class="medStar endStar2" src="chrome-star-bright.png">-->
-        
-        <img class="biggestStar endStar2" src="chrome-star-bright.png">
-        
-        <img class="biggestStar endStar3" src="chrome-star-bright.png">
         
  
         
@@ -658,10 +657,57 @@
 <!--<script type="text/javascript" src="movingBg.js"></script>-->
 
     <script type="text/javascript" src="skrollr.js"></script>
+        <script type="text/javascript" src="skrollr.menu.js"></script>
 	<script type="text/javascript">
 	   var s = skrollr.init();
+        skrollr.menu.init(s, {
+	//skrollr will smoothly animate to the new position using `animateTo`.
+	animate: true,
+
+	//The easing function to use.
+	easing: 'sqrt',
+
+	//Multiply your data-[offset] values so they match those set in skrollr.init
+	scale: 2,
+
+	//How long the animation should take in ms.
+	duration: function(currentTop, targetTop) {
+		//By default, the duration is hardcoded at 500ms.
+		return 500;
+
+		//But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+		//return Math.abs(currentTop - targetTop) * 10;
+	},
+
+	//If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+	//You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+//	handleLink: function(link) {
+//		return 400;//Hardcoding 400 doesn't make much sense.
+//	},
+
+	//By default skrollr-menu will only react to links whose href attribute contains a hash and nothing more, e.g. `href="#foo"`.
+	//If you enable `complexLinks`, skrollr-menu also reacts to absolute and relative URLs which have a hash part.
+	//The following will all work (if the user is on the correct page):
+	//http://example.com/currentPage/#foo
+	//http://example.com/currentDir/currentPage.html?foo=bar#foo
+	///?foo=bar#foo
+	complexLinks: false,
+
+	//This event is triggered right before we jump/animate to a new hash.
+	change: function(newHash, newTopPosition) {
+		//Do stuff
+	},
+
+	//Add hash link (e.g. `#foo`) to URL or not.
+	updateUrl: false //defaults to `true`.
+});
+    function jumpToQuiz()
+        {
+        s.setScrollTop(30000)
+        }
 	</script>
-        <script src="hscroll.js" type=text/javascript></script>
+        
+<!--        <script src="rotate.js" type="text/javascript"></script>-->
         <script src="quiz.js" type="text/javascript"></script>
     </body>
 </html>
