@@ -896,7 +896,7 @@ h2{
 #blockAbout{
     display: block;
    position: absolute;
-    top: 24%;
+    top: 20%;
      left: 49%;
     width: 830px;
     font-size: 1em;
@@ -905,7 +905,7 @@ h2{
 
 #blockAbout2{
     position: absolute;
-    top: 33%;
+    top: 45%;
     left: 4%;
     width: 830px;
      font-size: 1em;
@@ -918,14 +918,14 @@ h2{
 
 
 
-/*Section 6*/
+/*QUIZ INTRO*/
 #block4{
     position: absolute;
-    top: 28%;
+    top: 40%;
     left: 23%;
     width:900px;
     transform: translate(-50%, -50%);
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 #arrowBox{
@@ -943,64 +943,14 @@ h2{
 
 #lastTitle{
    position: absolute;
-    top: 24%;
+    top: 30%;
     left: 25%;
-    width:1000px;
+    width: 1000px;
 }
 
 .title{
     font-weight: 500; 
-    font-size: 5em
-}
-
-
-
-@keyframes loading {
-  0%   { cy: 10; }
-  25%  { cy: 3; }
-  50%  { cy: 10; }
-}
-
-canvas {
-  height: 100vh;
-  pointer-events: none;
-  position: fixed;
-  width: 100%;
-}
-
-#confetti {
-  background: #e6fff8;
-  border: 2px solid black;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  left: 50%;
-  overflow: hidden;
-  padding: 0 10px;
-  position: fixed;
-  top: 50%;
-  width: 190px;
-
-
-
-  &::before {
-    background: #1f2335;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .4) inset;
-    content: '';
-    display: block;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    transition: width .2s cubic-bezier(.39,1.86,.64,1) .3s;
-    width: 100%;
-  }
-}
-
-.button-text span {
-  position: relative;
-  color: black;  
+    font-size: 5.2em;
 }
 
 #handOutline{
@@ -1016,10 +966,10 @@ canvas {
     border-radius: 50%;
     background:transparent;
     text-align: center;
-     width: 120px;
+    width: 120px;
     height: 90px;
     opacity: 1;
-    padding: 32px 20px;
+    padding: 22% 10%;
 }
 
 
