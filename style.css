@@ -369,42 +369,106 @@ canvas {
     cursor: pointer;
 }
 */
-
 #buttonContainer{
-    position: relative;
-    width: 300px;
-    height: 300px;
+    position: fixed;
+    z-index: 1;
 }
 
 .buttonQuiz{
     position: absolute;
-    top: 80%;
-    border: 1px black solid;
-}
-
-
-svg  {
- position: absolute;
- top: 79%;
-  left: 5%;
-  fill: currentColor;
-    color: black;
-  height: auto;
-  max-width: 16vmin;
-  transform-origin: center;
-  width: 16%;
-  font-family: "Orna-Regular";
-  z-index: 1;
-    border-radius: 50%;
-   padding: 15px 15px;
-   
-}
-
-svg:hover{
-     background: #e6fff8;
+    top: -1.6%;
+    left: 0;
+    font-size: 1.2em;
     border: 2px solid black;
-    transition-duration: .1s;
-    transition-delay: .3s;
+    height: 18px;
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    padding: 18px 25px;
+    z-index: 1;
+}
+
+#headContainer{
+    position: fixed;
+    top: -1.6%;
+    left: 7.3%;
+    width: 100%;
+    z-index: 1;
+}
+
+.header{
+    position: absolute;
+    font-size: 1.2em;
+    border: 2px solid black;
+    border-left: transparent;
+    height: 18px;
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    padding: 18px 443px;
+    width: 1000px;
+}
+
+#homeContainer{
+    position: fixed;
+    top: -1.6%;
+    left: 95.1%;
+    width: 100%;
+    z-index: 1;
+}
+
+.home{
+    position: absolute;
+    font-size: 1.2em;
+    border: 2px solid black;
+    height: 18px;
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    padding: 18px 20px;
+    width: 50px;
+}
+
+#scrollContainer{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    width: 100%;
+    z-index: 1;
+}
+
+.scroll{
+    position: relative;
+    font-size: 1.2em;
+    border: 1px solid black;
+    height: 18px;
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+    padding: 18px 20px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -902,7 +966,6 @@ canvas {
   pointer-events: none;
   position: fixed;
   width: 100%;
-  z-index: 2;
 }
 
 #confetti {
@@ -953,10 +1016,11 @@ canvas {
 
 #hand{
     position: absolute;
-    font-size:5em;
+    font-size: 5em;
     top: -35%;
     left: 10%;
     opacity: 1;
 }
+
 
 
