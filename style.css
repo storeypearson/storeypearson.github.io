@@ -2,14 +2,6 @@
     font-family:"univers";
     src: url("Orna-Regular.woff") format("woff");
 }
-/*
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-*/
 
 br{
     line-height: 2;
@@ -73,215 +65,877 @@ canvas {
     margin: 0;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
-    height: 310px;
-    width: 1230px;  
+    height:310px;
+    width:1230px;  
 }
 
 /*Star Positioning*/
 
-.div1{
-    height: 10em;
-    position: relative;
-/*
-    height:370px;
-    width:1600px;
-*/
-    top: 300%;
-    left: 50%;
+.starBox{
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
-.div2{
+.title{
+    height: 3em;
+    width: auto;
+    position: relative;
+    top: 270%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.star{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 0%;
+    top: 90%;
     left: 10%;
 }
 
-.div3{
+.star2{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 150%;
+     top: 170%;
+    left: 20%;
+}
+
+.star3{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 100%;
     left: 25%;
 }
 
-.div4{
+.star4{
     height: 10em;
     position: relative;
-    width:200px;
-    height:200px;
-    bottom: 238%;
-    left: 35%;
+    width: 200px;
+    height: 200px;
+    top: 90%;
+    left: 29%;
 }
 
-.div5{
+.star5{
     height: 10em;
     position: relative;
-    width:200px;
-    height:200px;
-    bottom: 377%;
-    left: 45%;
+    width: 200px;
+    height: 200px;
+    top: 70%;
+    left: 5%;
 }
 
-.div6{
+.star6{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 457%;
-    left: 53%;
+     top: 70%;
+    left: 23%;
 }
 
-.div7{
+.star7{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 668%;
-    left: 62%;
-}
-
-.div8{
-    height: 10em;
-    position: relative;
-    width:200px;
-    height:200px;
-    bottom: 737%;
-    left: 72%;
-}
-
-.div9{
-    height: 10em;
-    position: relative;
-    width:200px;
-    height:200px;
-    bottom: 902%;
-    left: 87%;
-}
-
-.div10{
-    height: 10em;
-    position: relative;
-    width:200px;
-    height:200px;
-    bottom: 956%;
-    left: 85%;
-}
-
-.div11{
-    height: 10em;
-    position: relative;
-    width:200px;
-    height:200px;
-    bottom: 1069%;
-    left: 92%;
-}
-
-.div12{
-    height: 10em;
-    position: relative;
-    width:200px;
-    height:200px;
-    bottom: 1099%;
-    left: 6%;
-}
-
-.div13{
-    height: 10em;
-    position: relative;
-    width:200px;
-    height:200px;
-    bottom: 1194%;
-    left: 9%;
-}
-
-.div14{
-    height: 10em;
-    position: relative;
-    width:200px;
-    height:200px;
-    bottom: 1130%;
-    left: 10%;
-}
-
-.div15{
-    height: 10em;
-    position: relative;
-    width:200px;
-    height:200px;
-    bottom: 1300%;
-    left: 19%;
-}
-
-.div16{
-    height: 10em;
-    position: relative;
-    width:200px;
-    height:200px;
-    bottom: 1395%;
+    top: 70%;
     left: 36%;
 }
 
-.div17{
+.star8{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 1491%;
-    left: 44%;
+    top: 30%;
+    left: 42%;
 }
 
-.div18{
+.star9{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 1674%;
-    left: 49%;
+    top: 140%;
+    left: 37%;
 }
 
-.div19{
+.star10{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 1694%;
-    left: 63%;
+    top: 100%;
+    left: 45%;
 }
 
-.div20{
+.star11{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 1874%;
+    top: 130%;
+    left: 32%;
+}
+
+.star12{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 40%;
+    left: 50%;
+}
+
+.star13{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 90%;
+    left: 50%;
+}
+
+.star14{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 140%;
+    left: 48%;
+}
+
+.star15{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 150%;
+    left: 53%;
+}
+
+.star16{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 100%;
+    left: 58%;
+}
+
+.star17{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 80%;
+    left: 64%;
+}
+
+.star18{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 60%;
+    left: 69%;
+}
+
+.star19{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 60%;
+    left: 60%;
+}
+
+.star20{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 120%;
     left: 71%;
 }
 
-.div21{
+.star21{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 2034%;
-    left: 80%;
+    top: 50%;
+    left: 17%;
 }
 
-.div22{
+.star22{
     height: 10em;
     position: relative;
     width:200px;
     height:200px;
-    bottom: 2070%;
+    top: 50%;
     left: 84%;
 }
 
+.star23{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 90%;
+    left: 90%;
+}
+
+.star24{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 240%;
+    left: 83%;
+}
+
+.star25{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 100%;
+    left: 80%;
+}
+
+.star26{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 140%;
+    left: 78%;
+}
+
+.star27{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 150%;
+    left: 84%;
+}
+
+.star28{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 190%;
+    left: 93%;
+}
+
+.star29{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 280%;
+    left: 79%;
+}
+
+.star30{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 200%;
+    left: 86%;
+}
+
+.star31{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 260%;
+    left: 90%;
+}
+
+.star32{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 400%;
+    left: 34%;
+}
+
+.star33{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 240%;
+    left: 20%;
+}
+
+.star34{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 330%;
+    left: 17%;
+}
+
+.star35{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 340%;
+    left: 92%;
+}
+
+.star36{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 360%;
+    left: 78%;
+}
+
+.star37{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 352%;
+    left: 84%;
+}
+
+.star38{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 368%;
+    left: 95%;
+}
+
+.star39{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 420%;
+    left: 79%;
+}
+
+.star40{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 440%;
+    left: 86%;
+}
+
+.star41{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 370%;
+    left: 70%;
+}
+
+.star42{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 530%;
+    left: 91%;
+}
+
+.star43{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 480%;
+    left: 60%;
+}
+
+.star44{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 510%;
+    left: 83%;
+}
+
+.star45{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 500%;
+    left: 89%;
+}
+
+.star46{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 540%;
+    left: 78%;
+}
+
+.star47{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 460%;
+    left: 64%;
+}
+
+.star48{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 500%;
+    left: 73%;
+}
+
+.star49{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 530%;
+    left: 66%;
+}
+
+.star50{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 430%;
+    left: 58%;
+}
+
+.star51{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 370%;
+    left: 60%;
+}
+
+.star52{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 400%;
+    left: 54%;
+}
+
+.star53{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 370%;
+    left: 50%;
+}
+
+.star54{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 400%;
+    left: 47%;
+}
+
+.star55{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 440%;
+    left: 42%;
+}
+
+.star56{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 450%;
+    left: 70%;
+}
+
+.star57{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 480%;
+    left: 34%;
+}
+
+.star58{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 468%;
+    left: 48%;
+}
+
+.star59{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 524%;
+    left: 49%;
+}
+
+.star60{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 503%;
+    left: 42%;
+}
+
+.star61{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 380%;
+    left: 40%;
+}
+
+.star62{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 420%;
+    left: 23%;
+}
+
+.star63{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 500%;
+    left: 30%;
+}
+
+.star64{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 490%;
+    left: 27%;
+}
+
+.star65{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 380%;
+    left: 28%;
+}
+
+.star66{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 400%;
+    left: 20%;
+}
+
+.star67{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 525%;
+    left: 39%;
+}
+
+.star68{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 488%;
+    left: 54%;
+}
+
+.star69{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 484%;
+    left: 20%;
+}
+
+.star70{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 522%;
+    left: 15%;
+}
+
+.star71{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 540%;
+    left: 24%;
+}
+
+.star72{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 400%;
+    left: 13%;
+}
+
+.star73{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 470%;
+    left: 15%;
+}
+
+.star74{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 200%;
+    left: 9%;
+}
+
+.star75{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 240%;
+    left: 13%;
+}
+
+.star76{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 170%;
+    left: 5%;
+}
+
+.star77{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 320%;
+    left: 8%;
+}
+
+.star78{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 288%;
+    left: 4%;
+}
+
+.star69{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 484%;
+    left: 4%;
+}
+
+.star70{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 400%;
+    left: 6%;
+}
+
+.star71{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 530%;
+    left: 8%;
+}
+
+.star72{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 400%;
+    left: 12%;
+}
+
+.star73{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 470%;
+    left: 15%;
+}
+
+.star74{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 480%;
+    left: 20%;
+}
+.star75{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 200%;
+    left: 8%;
+}
+
+.star76{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 160%;
+    left: 5%;
+}
+
+.star77{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 270%;
+    left: 14%;
+}
+
+.star78{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 280%;
+    left: 5%;
+}
+
+.star79{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 512%;
+    left: 17%;
+}
+
+.star80{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 540%;
+    left: 25%;
+}
+
+.star81{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 300%;
+    left: 20%;
+}
+
+.star82{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 270%;
+    left: 4%;
+}
+
+.star83{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 170%;
+    left: 70%;
+}
+
+.star84{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 490%;
+    left: 27%;
+}
+
+
+
 /*Star Sizes*/
 .biggestStar{
-    position: absolute;
+    position: relative;
     margin: 0;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -290,7 +944,7 @@ canvas {
 }
 
 .bigStar{
-    position: absolute;
+    position: relative;
     margin: 0;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -299,7 +953,7 @@ canvas {
 }
 
 .medStar{
-    position: absolute;
+    position: relative;
     margin: 0;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -308,7 +962,7 @@ canvas {
 }
 
 .smallStar{
-    position: absolute;
+    position: relative;
     margin: 0;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -317,7 +971,7 @@ canvas {
 }
 
 .smallishStar{
-    position: absolute;
+    position: relative;
     margin: 0;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -326,7 +980,7 @@ canvas {
 }
 
 .smallestStar{
-    position: absolute;
+    position: relative;
     margin: 0;
     margin-right: -50%;
     transform: translate(-50%, -50%); 
@@ -337,45 +991,13 @@ canvas {
 
 
 /*Section 2*/
-
- /* .button */
-
-*/
-
-/*
-#hoverCircle{
-    opacity: 0;
-    background: #e6fff8;
-    border: solid 1.5pt black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    height: 210px;
-    width: 210px;
-    cursor: pointer;
-}
-
-#triggerQuiz:hover{
-    opacity: 1;
-    background: #e6fff8;
-    border: solid 1.5pt black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    height: 210px;
-    width: 210px;
-    cursor: pointer;
-}
-*/
 #buttonContainer{
     position: fixed;
     z-index: 1;
 }
 
 .buttonQuiz{
-    position: absolute;
+    position: relative;
     top: -1.6%;
     left: 0;
     font-size: 1.2em;
@@ -394,14 +1016,14 @@ canvas {
 
 #headContainer{
     position: fixed;
-    top: -1.6%;
-    left: 7.3%;
     width: 100%;
     z-index: 1;
 }
 
 .header{
-    position: absolute;
+    position: relative;
+    top: 0;
+    left: 7.3%;
     font-size: 1.2em;
     border: 2px solid black;
     border-left: transparent;
@@ -419,14 +1041,14 @@ canvas {
 
 #homeContainer{
     position: fixed;
-    top: -1.6%;
+    top: 0;
     left: 95.1%;
     width: 100%;
     z-index: 1;
 }
 
 .home{
-    position: absolute;
+    position: relative;
     font-size: 1.2em;
     border: 2px solid black;
     height: 18px;
@@ -442,7 +1064,7 @@ canvas {
 }
 
 #scrollContainer{
-    position: fixed;
+    position: relative;
     top: 85%;
     left: 50%;
     transform: translate(-50% -50%);
@@ -451,11 +1073,11 @@ canvas {
 }
 
 .scroll{
-    position: absolute;
+    position: relative;
     font-size: 1.2em;
-    border: 2px solid black;
+    border: 1px solid white;
     height: 18px;
-    color: black;
+    color: white;
     text-decoration: none;
     vertical-align: middle;
     letter-spacing: 2px;
@@ -566,7 +1188,7 @@ p.section1{
   transform: translate(-50%, -50%);
   position: absolute;
   right: 50%;
-  top: 56%;
+  top: 50%;
 }
 
 .outer2 {
@@ -576,7 +1198,7 @@ p.section1{
   transform: translate(-50%, -50%);
   position: absolute;
   right: 100%;
-  top: 56%;
+  top: 50%;
 }
 
 .outer3 {
@@ -586,7 +1208,7 @@ p.section1{
   transform: translate(-50%, -50%);
   position: absolute;
   right: 0%;
-  top: 56%;
+  top: 50%;
 }
 
 .outer4 {
@@ -596,7 +1218,7 @@ p.section1{
   transform: translate(-50%, -50%);
   position: absolute;
   right: 0%;
-  top: 56%;
+  top: 50%;
 }
 
 .outer5 {
@@ -606,7 +1228,7 @@ p.section1{
   transform: translate(-50%, -50%);
   position: absolute;
   right: 0%;
-  top: 56%;
+  top: 50%;
 }
 
 .outer6 {
@@ -616,7 +1238,7 @@ p.section1{
   transform: translate(-50%, -50%);
   position: absolute;
   right: 0%;
-  top: 56%;
+  top: 50%;
 }
 
 .outer7 {
@@ -626,7 +1248,7 @@ p.section1{
   transform: translate(-50%, -50%);
   position: absolute;
   right: 0%;
-  top: 56%;
+  top: 50%;
 }
 
 .inner {
@@ -666,19 +1288,23 @@ p.section1{
 
 #info1{
     position: absolute;
-    height: auto;
-    bottom: 20%;
-    left: 60%;
-    font-size: 3em;
+    height:auto;
+    font-size: 2em;
     line-height: 1.3;
     max-width: 1000px;
 }
 
-#disclaimer{
+.auctionTitle{
     position: relative;
-    bottom: -31%;
-    left: 55%;
-    font-size: 4em;
+    left: 317%;
+    top: 50%;
+    transform: rotate(270deg);
+    font-size: 1.2em;
+    color: white;
+    border: 1px solid black;
+    border-top: transparent;
+    padding: 20px 22px;
+    align-items: center;
 }
 
 p{
@@ -758,31 +1384,24 @@ h2{
 }
 
 .number{
-    position: absolute;
+    position: relative;
     text-align: left;
     font-size: 9em;
     padding-left: 3%;
     max-width: 600px;
-    top: 74.5%;
-}
-
-.number2{
-    position: absolute;
-    text-align: left;
-    font-size: 9em;
-    padding-left: 3%;
-    max-width: 800px;
-    top: 74.5%;
+    top: 58%;
 }
 
 .number3{
-    position: absolute;
+    position: relative;
     text-align: left;
     font-size: 9em;
     padding-left: 3%;
     max-width: 800px;
-    top: 74.5%;
+    top: 79.5%;
 }
+
+
 
 .section2{
     position: absolute;
@@ -791,9 +1410,9 @@ h2{
 }
 
 #block{
-    position: absolute;
-    top: 69.5%;
-    left: 8%;
+    position: relative;
+    top: 30.5%;
+    left: 2%;
 }
 
 .left-text{
@@ -807,17 +1426,29 @@ h2{
 }
 
 .right-text{
-    position: absolute;
+    position: relative;
     text-align: left;
     padding-left: 11%;
     max-width: 830px;
-    top: 8.5%;
-    left: 43%;
+    top: -54%;
+    left: 43.5%;
     font-weight: 500;
+}
+
+.cardPhoto{
+    position: relative;
+    top: -52%;
+    left: 54.5%;
+    width: 43%;
+    height: auto;
 }
 
 .bold{
     font-weight: 700;
+}
+
+.buyPosition{
+    margin-bottom: 10%;
 }
 
 .thumbnail{
@@ -833,9 +1464,9 @@ h2{
 
 /*Section 4*/
 #block2{
-    position: absolute;
-    top: 69.5%;
-    left: 9%;
+    position: relative;
+    top: 30.5%;
+    left: 3%;
 }
 
 /*Section 5*/
@@ -851,9 +1482,14 @@ h2{
 
 #block3{
     position: absolute;
-    top: 57%;
+    top: 60%;
     left: 9%;
     font-weight: 500;
+}
+
+.block4{
+    position: relative;
+    top: -30%;
 }
 
 #markerRight{
@@ -889,6 +1525,428 @@ h2{
     width:200px;
     height:200px;
     top: 10%;
+    left: 14%;
+}
+
+/*About section*/
+.blockAbout{
+    display: block;
+   position: absolute;
+    top: 33%;
+     left: 49%;
+    width: 830px;
+    font-size: 1em;
+}
+
+
+.blockAbout2{
+    position: absolute;
+    top:66%;
+    left: 4%;
+    width: 830px;
+     font-size: 1em;
+}
+
+.about-right{
+    width: 830px;
+}
+
+
+
+
+/*Section 6*/
+#block4{
+    position: absolute;
+    top: 28%;
+    left: 23%;
+    width:900px;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+}
+
+#arrowBox{
+    position: absolute;
+    bottom: 25%;
+    left: 90%;
+}
+
+
+.arrowBig{
+    position: absolute;
+    z-index:1;
+    font-size: 7em;
+}
+
+#lastTitle{
+   position: absolute;
+    top: 24%;
+    left: 25%;
+    width:1000px;
+}
+
+.title{
+    font-weight: 500; 
+    font-size: 5em
+}
+
+
+
+@keyframes loading {
+  0%   { cy: 10; }
+  25%  { cy: 3; }
+  50%  { cy: 10; }
+}
+
+canvas {
+  height: 100vh;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+}
+
+#confetti {
+  background: #e6fff8;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  left: 50%;
+  overflow: hidden;
+  padding: 0 10px;
+  position: fixed;
+  top: 50%;
+  width: 190px;
+
+
+
+  &::before {
+    background: #1f2335;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .4) inset;
+    content: '';
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    transition: width .2s cubic-bezier(.39,1.86,.64,1) .3s;
+    width: 100%;
+  }
+}
+
+.button-text span {
+  position: relative;
+  color: black;  
+}
+
+#handOutline{
+   position: relative;
+   width: 120px;
+    height: 120px;
+    left: 5%;
+    top: 5%;
+    border: 2px solid black;
+    border-radius: 50%;
+    background:#e6fff8;
+}
+
+#hand{
+    position: absolute;
+    font-size: 5em;
+    top: -35%;
+    left: 10%;
+    opacity: 1;
+}
+
+.spin{
+  perspective: 2000px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinnyImgs{
+    position: relative;
+    bottom: 45%;
+    left: 32%;
+    display: grid;
+    grid-template-columns: 27% 27% 27%;
+    grid-gap: 1%;
+    align-items: center;
+}
+
+.spinnyText{
+    max-width: 82%;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 600;
+}
+
+.spinny{
+  width: 150px;
+  height: auto;
+    transform: rotateY(45deg);
+  animation: rotateAnimation 5s linear infinite; 
+}
+.bigSpinny{
+    width: 220px;
+    height: auto;
+    transform: rotateY(45deg);
+  animation: rotateAnimation 5s linear infinite; 
+}
+
+.biggerSpinny{
+    width: 200px;
+    height: auto;
+    transform: rotateY(45deg);
+  animation: rotateAnimation 5s linear infinite; 
+}
+
+.mediumSpinny{
+    width: 100px;
+    height: auto;
+    transform: rotateY(45deg);
+  animation: rotateAnimation 5s linear infinite; 
+}
+
+.smallerSpinny{
+    width: 120px;
+    height: auto;
+    transform: rotateY(45deg);
+    animation: rotateAnimation 5s linear infinite;
+}
+
+.smallestSpinny{
+    width: 100px;
+    height: auto;
+    transform: rotateY(45deg);
+    animation: rotateAnimation 5s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  from {transform: rotateY(45deg);}
+  to {transform: rotateY(225deg);}
+}
+
+
+
+/*
+.emoji {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    font-size: calc(100px + 4vw);
+    min-width: 1.4em;
+    margin: 0.3em 0.4em;
+    text-align: center;
+}
+
+.emoji::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.hourglass::after {
+    content: '⏳';
+    --emoji: '⌛️';
+    animation-name: twoFrames;
+    animation-duration: 1.2s;
+}
+
+@keyframes twoFrames {
+    50% {
+        content: var(--emoji);
+    }
+}
+
+.position{
+   left: 50%: 
+}
+
+.flip {
+    -webkit-perspective: 1000;
+    width: 20%;
+    height: 50%;
+    top: 21%;
+    left: 24%;
+    position: relative;
+    margin: 50px auto;
+}
+
+.flip .card.flipped {
+    -webkit-transform: rotatey(-180deg);
+}
+.flip .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+}
+.flip .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    z-index: 2;
+    font-size: 3em;
+    text-align: center;
+    line-height: 200px;
+}
+.flip .card .front {
+    position: absolute;
+    z-index: 1;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.flip .card .back {
+    -webkit-transform: rotatey(-180deg);
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+*/
+
+
+
+.cardBox{
+    position: absolute;
+    top: 39.5%;
+    left: 54%;
+    width: 43%;
+    height: auto;
+}
+
+
+
+.cardGrid{
+    position: absolute;
+    left: 54%;
+    top: 34%;
+    height: 63%;
+    width: auto;
+}
+
+/* messages */
+.messageC {
+  position: relative;
+  top: -28%;
+  left: 25%;
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+}
+.message {
+  display: none;
+  float: left; 
+  clear: left; 
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 2px solid black;
+  font-size: 2em;
+  border-radius: 35px;
+  padding: 10px 17px; 
+  width: auto;    
+}
+
+#message-2{
+    color: white;
+    margin-left: 50%;
+}
+
+#message-4{
+    color: white;
+    margin-left: 50%;
+}
+
+#message-6{
+    color: white;
+    margin-left: 50%;
+}
+
+/* writer */
+.writing {
+  display: block;
+  height: 38px;
+  width: 90px;
+  background-color: transparent;
+/*  border: 2px solid black;*/
+  border-radius: 25px; 
+}
+.writing::before {
+  content: '';
+  border: solid 20px;
+  border-color: transparent transparent;
+  position: relative;
+  top: 0px;
+  left: -10px; 
+}
+.writing .dot {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border: 2px solid black;
+  opacity: 0.3;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: dots .9s ease-in-out infinite;
+  animation: dots .9s ease-in-out infinite;   }
+.writing .dot.left {
+  top: -7px;
+  margin-left: 17px; 
+}
+.writing .dot.center {
+  top: -26px;
+  left: 37px;
+  -webkit-animation-delay: 0.3s;
+}
+.writing .dot.right {
+  top: -45px;
+  left: 57px;
+  -webkit-animation-delay: 0.6s; 
+}
+@-webkit-keyframes dots {
+  0% {
+    opacity: 1; } }
+@keyframes dots {
+  0% {
+    opacity: 1; } 
+}
+
+#markerRight{
+    height: 10em;
+    position: relative;
+    width:200px;
+    height:200px;
+    top: 12%;
+    left: 88%;
+}
+
+#marker2{
+    height: 10em;
+    position: absolute;
+    width:200px;
+    height:200px;
+    top: 12%;
+    left: 14%;
+}
+
+#marker3{
+    height: 10em;
+    position: absolute;
+    width:200px;
+    height:200px;
+    top: 12%;
+    left: 19%;
+}
+
+#marker4{
+    height: 10em;
+    position: absolute;
+    width:200px;
+    height:200px;
+    top: 12%;
     left: 14%;
 }
 
@@ -942,9 +2000,9 @@ h2{
 }
 
 #lastTitle{
-   position: absolute;
+   position: relative;
     top: 30%;
-    left: 25%;
+    left: -2%;
     width: 1000px;
 }
 
@@ -954,22 +2012,19 @@ h2{
 }
 
 #handOutline{
-   position: absolute;
-    left: 5%;
-    top: 6%;
+   position: relative;
+    left: 7%;
+    top: 15%;
+     width: 150px;
+    height: 150px;
+    background: transparent;
+      font-size: 2em;
 }
 
-#hand{
-    position: relative;
-    font-size: 5em;
-    border: 2px solid black;
-    border-radius: 50%;
-    background:transparent;
+.handYay{
+    padding: 25% 10%;
+    align-items: center;
     text-align: center;
-    width: 120px;
-    height: 90px;
-    opacity: 1;
-    padding: 22% 10%;
 }
 
 

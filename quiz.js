@@ -4,37 +4,33 @@ const apiKey = 'ee0e7055ed6d5a5af79611edc1ea0b4f';
 let cities = ["London", "Dallas", "Shanghai", "Tokyo", "Paris", "Moscow", "Barcelona", "Dubai", "Madrid", "Bangladesh"]
 
 const getWeather = async (cityName) => {
-    const endpoint = url + '?q=' + cityName + '&appid=' + apiKey; // http://api.openweathermap.org/data/2.5/weather?q=Tampa&appid=ee0e7055ed6d5a5af79611edc1ea0b4f
+  const endpoint = url + '?q=' + cityName + '&appid=' + apiKey; // http://api.openweathermap.org/data/2.5/weather?q=Tampa&appid=ee0e7055ed6d5a5af79611edc1ea0b4f
 
-    try {
-        const response = await fetch(endpoint, {
-            cache: 'no-cache'
-        });
-        if (response.ok) {
-            const jsonResponse = await response.json();
-            console.log(jsonResponse);
-            return jsonResponse;
-        }
-    } catch (error) {
-        console.log(error);
-    };
+  try {
+    const response = await fetch(endpoint, {cache: 'no-cache'});
+    if (response.ok) {
+      const jsonResponse = await response.json();
+      console.log(jsonResponse);
+        return jsonResponse;
+    }
+  } catch(error) {
+    console.log(error);
+  };
 }
 
 /* Every time the window is scrolled ... */
-$(window).scroll(function () {
+$(window).scroll( function(){
 
     /* Check the location of each desired element */
-    $('#circle').each(function (i) {
+    $('#circle').each( function(i){
 
         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
         var bottom_of_window = $(window).scrollTop() + $(window).height();
 
         /* If the object is completely visible in the window, fade it in */
-        if (bottom_of_window > bottom_of_object) {
+        if( bottom_of_window > bottom_of_object ){
 
-            $(this).animate({
-                'opacity': '1'
-            }, 500);
+            $(this).animate({'opacity':'1'},500);
 
         }
 
@@ -48,160 +44,195 @@ let disableButtons = false;
 const tick = '<div class="answer__tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></div>';
 let thanks = '<div class="thanks"><div class="thanks__tick">✔ </div><h1 class="thanks__title">Thank you!</h1></div>';
 
-$('.answer__input').on('change', function (e) {
+$('.answer__input').on('change', function(e) {
 
-    if ($(this).next().children('.answer__tick').length > 0) {
-        return false
+    if($(this).next().children('.answer__tick').length>0){
+      return false
     }
-    $(this).next().append(tick)
+  $(this).next().append(tick)
 });
 
 
-$('.navigation__btn--right').click(function (e) {
-    let currentIndex = Number($('.quiz__step--current').attr('data-question'));
-    if ($('.quiz__step--current input:checked').length == 0) {
-        //console.log('input empty');
-        return false;
-    }
-    //console.log({'currentIndex': currentIndex, 'numberSteps': numberSteps-1})
-    if (currentIndex == numberSteps + 1 || disableButtons == true) {
-        //console.log('last')
-        return false;
-    }
-    if (currentIndex + 1 == numberSteps + 1) {
-        $(this).addClass('navigation__btn--disabled');
-        let n = 1 + Math.floor(Math.random() * 9) // returns a decimal between 0 and 1
-        let weatherData = getWeather(cities[n]).then((resolve) => {
-            console.log(resolve.wind.deg)
-            let node = '<div>' + resolve.weather[0].description + '</div>'
-            $('#end').append(node)
-        });
+$('.navigation__btn--right').click(function(e){
+let currentIndex = Number($('.quiz__step--current').attr('data-question'));
+  if($('.quiz__step--current input:checked').length == 0){
+     //console.log('input empty');
+     return false;
+ }
+  //console.log({'currentIndex': currentIndex, 'numberSteps': numberSteps-1})
+  if(currentIndex == numberSteps + 1 || disableButtons==true){
+    //console.log('last')
+    return false;
+  }
+  if(currentIndex + 1 == numberSteps + 1 ){
+    $(this).addClass('navigation__btn--disabled');
+      let n = 1 + Math.floor(Math.random() * 9) // returns a decimal between 0 and 1
+       let weatherData = getWeather(cities[n]).then((resolve)=>{
+           console.log (resolve.wind.deg)
+           let node = '<div>'+resolve.weather[0].description+'</div>'
+           $('#end').append(node)
+       });
 
-    }
-    if (currentIndex == numberSteps) {
+  }
+  if(currentIndex == numberSteps){
 
-        $('.summary__item').remove();
-        $('.quiz__step:not(.quiz__summary)').each(function (index, item) {
-            console.log(item)
-            let icon = $(item).children('.question__emoji').text()
-            let answer = $(item).children('.answer').find('input:checked').val();
-            let node = '<div class="summary__item"><div class="question__emoji">' + icon + '</div>' + answer + '</div>'
-            $('#summary').append(node)
-        })
-    }
-    const percentage = (currentIndex * 100) / numberSteps;
-    $('.progress__inner').width(percentage + '%');
-    console.log('input ok')
-    $('.quiz__step--current').hide('300');
-    $('.quiz__step--current').removeClass('quiz__step--current');
-    $('.quiz__step--' + (currentIndex + 1)).show('300').addClass('quiz__step--current');
+  $('.summary__item').remove();
+    $('.quiz__step:not(.quiz__summary)').each(function(index, item){
+      console.log(item)
+      let icon = $(item).children('.question__emoji').text()
+      let answer = $(item).children('.answer').find('input:checked').val();
+      let node = '<div class="summary__item"><div class="question__emoji">'+icon+'</div>'+answer+'</div>'
+      $('#summary').append(node)
+    })
+  }
+  const percentage = (currentIndex * 100)/ numberSteps;
+  $('.progress__inner').width(percentage+ '%');
+  console.log('input ok')
+  const currentStep = $('.quiz__step--current');
+  currentStep.removeClass('quiz__step--current');
+  currentStep.on('transitionend', () => {
+    currentStep.off();
+    currentStep.addClass('quiz__step--hidden');
+    
+    $('.quiz__step--'+(currentIndex+1)).removeClass('quiz__step--hidden');
+    $('.quiz__step--'+(currentIndex+1)).focus();
+    $('.quiz__step--'+(currentIndex+1)).addClass('quiz__step--current');
     currentIndex = Number($('.quiz__step--current').attr('data-question'));
-    if (currentIndex > 1) {
-        $('.navigation__btn--left').removeClass('navigation__btn--disabled');
+    if(currentIndex > 1 ){
+      $('.navigation__btn--left').removeClass('navigation__btn--disabled');
     }
+  });
 });
 
 
 //REload Quiz
-$(".btn").click(function () {
-    leftPress()
-    leftPress()
-    leftPress()
-    leftPress()
-    leftPress()
-    leftPress()
-    currentIndex = Number($('.quiz__step--current').attr('data-question'));
-    $('#end').empty()
+ $(".btn").click(function() {
+     //  leftPress()
+     // leftPress()
+     // leftPress()
+     // leftPress()
+     // leftPress()
+     // leftPress()
+     currentIndex = Number($('.quiz__step--current').attr('data-question'));
+      $('#end').empty()
     $(".container").load(".container > *");
-    $('input[type="checkbox"]').prop('checked', false);
-    $('.navigation__btn--right').addClass('navigation__btn');
-    $('.quiz__step--current').hide('300');
-    $('.quiz__step--current').removeClass('quiz__step--current');
-    $('.quiz__step--' + (currentIndex)).show('300').addClass('quiz__step--current');
-    console.log(currentIndex)
-});
+     $( 'input[type="checkbox"]' ).prop('checked', false);
+         $('.navigation__btn--right').addClass('navigation__btn');
+
+     const currentStep = $('.quiz__step--current');
+     currentStep.removeClass('quiz__step--current');
+     currentStep.on('transitionend', () => {
+       currentStep.off();
+       currentStep.addClass('quiz__step--hidden');
+
+       let nextStep;
+
+       if ($('.quiz__step--'+(currentIndex + 1)).length > 0) {
+         nextStep = $('.quiz__step--'+(currentIndex));
+       } else {
+         nextStep = $('.quiz__step--1')
+       }
+
+       nextStep.removeClass('quiz__step--hidden');
+       nextStep.css('opacity');
+       nextStep.addClass('quiz__step--current');
+
+       currentIndex = Number($('.quiz__step--current').attr('data-question'));
+     });
+  });
 
 
 
 
-function keypressEvent(e) {
+function keypressEvent(e){
     let key = e.which || e.keyCode;
 
-    if (key == 65 || key == 66) {
-        $('.quiz__step--current input[data-char="' + key + '"]').prop('checked', true).change();
-        console.log($('.quiz__step--current input[data-char="' + key + '"]'))
-        $('.quiz__step--current input[data-char="' + key + '"] + .answer__label').change();
-    }
+  if(key==65 || key==66){
+    $('.quiz__step--current input[data-char="'+key+'"]').prop('checked', true).change();
+    console.log($('.quiz__step--current input[data-char="'+key+'"]'))
+    $('.quiz__step--current input[data-char="'+key+'"] + .answer__label').change();
+  }
 }
 
-function leftPress() {
-    let currentIndex = Number($('.quiz__step--current').attr('data-question'));
+function leftPress(){
+let currentIndex = Number($('.quiz__step--current').attr('data-question'));
 
-    console.log({
-        'currentIndex': currentIndex,
-        'numberSteps': numberSteps - 1
-    })
-    if (currentIndex == 1 || disableButtons == true) {
-        console.log('first')
-        $(this).addClass('navigation__btn--disabled');
-        return false;
-    }
+  console.log({'currentIndex': currentIndex, 'numberSteps': numberSteps-1})
+  if(currentIndex == 1 || disableButtons==true){
+    console.log('first')
+    $(this).addClass('navigation__btn--disabled');
+    return false;
+  }
 
 
-    $('.navigation__btn--right').removeClass('navigation__btn--disabled')
+  $('.navigation__btn--right').removeClass('navigation__btn--disabled')
 
-    console.log('input ok')
-    $('.quiz__step--current').hide('300');
-    $('.quiz__step--current').removeClass('quiz__step--current');
-    $('.quiz__step--' + (currentIndex - 1)).show('300').addClass('quiz__step--current');
+  console.log('input ok')
+  const currentStep = $('.quiz__step--current');
+  currentStep.removeClass('quiz__step--current');
+  currentStep.on('transitionend', () => {
+    currentStep.off();
+    currentStep.addClass('quiz__step--hidden');
+
+    const prevStep = $('.quiz__step--'+(currentIndex-1));
+    prevStep.removeClass('quiz__step--hidden');
+    prevStep.focus();
+    prevStep.addClass('quiz__step--current');
+
     currentIndex = Number($('.quiz__step--current').attr('data-question'));
-    if (currentIndex == 1) {
-        $(this).addClass('navigation__btn--disabled');
-    }
-    const percentage = ((currentIndex - 1) * 100) / numberSteps + 1;
-    $('.progress__inner').width(percentage + '%');
-    $('.quiz__step--current').keyup(keypressEvent);
+    // if(currentIndex == 1) {
+    //   $(this).addClass('navigation__btn--disabled');
+    // }
+  });
+    const percentage = ((currentIndex-1)  * 100)/ numberSteps+1;
+  $('.progress__inner').width(percentage+ '%');
+$('.quiz__step--current').keyup(keypressEvent);
 
 }
 
 
-$('.navigation__btn--left').click(function (e) {
-    let currentIndex = Number($('.quiz__step--current').attr('data-question'));
+$('.navigation__btn--left').click(function(e){
+let currentIndex = Number($('.quiz__step--current').attr('data-question'));
 
-    console.log({
-        'currentIndex': currentIndex,
-        'numberSteps': numberSteps - 1
-    })
-    if (currentIndex == 1 || disableButtons == true) {
-        console.log('first')
-        $(this).addClass('navigation__btn--disabled');
-        return false;
-    }
+  console.log({'currentIndex': currentIndex, 'numberSteps': numberSteps-1})
+  if(currentIndex == 1 || disableButtons==true){
+    console.log('first')
+    $(this).addClass('navigation__btn--disabled');
+    return false;
+  }
 
 
-    $('.navigation__btn--right').removeClass('navigation__btn--disabled')
+  $('.navigation__btn--right').removeClass('navigation__btn--disabled')
 
-    console.log('input ok')
-    $('.quiz__step--current').hide('300');
-    $('.quiz__step--current').removeClass('quiz__step--current');
-    $('.quiz__step--' + (currentIndex - 1)).show('300').addClass('quiz__step--current');
+  console.log('input ok')
+  const currentStep = $('.quiz__step--current')
+  currentStep.removeClass('quiz__step--current');
+  currentStep.on('transitionend', () => {
+    currentStep.off();
+    currentStep.addClass('quiz__step--hidden');
+
+    $('.quiz__step--'+(currentIndex-1)).removeClass('quiz__step--hidden');
+    $('.quiz__step--'+(currentIndex-1)).focus();
+    $('.quiz__step--'+(currentIndex-1)).addClass('quiz__step--current');
+
     currentIndex = Number($('.quiz__step--current').attr('data-question'));
-    if (currentIndex == 1) {
-        $(this).addClass('navigation__btn--disabled');
+    if(currentIndex == 1 ){
+      $(this).addClass('navigation__btn--disabled');
     }
-    const percentage = ((currentIndex - 1) * 100) / numberSteps + 1;
-    $('.progress__inner').height(percentage + '%');
-    $('.quiz__step--current').keyup(keypressEvent);
+    const percentage = ((currentIndex-1)  * 100)/ numberSteps+1;
+    $('.progress__inner').height(percentage+ '%');
+  });
+$('.quiz__step--current').keyup(keypressEvent);
 });
 
 
 
-$('.submit').click(function (e) {
-    e.preventDefault();
-    $('.quiz').remove();
-    $(thanks).appendTo('.container');
-    disableButtons = true;
-    $('.navigation__btn').addClass('navigation__btn--disabled')
+$('.submit').click(function(e){
+  e.preventDefault();
+  $('.quiz').remove();
+  $(thanks).appendTo('.container');
+  disableButtons=true;
+  $('.navigation__btn').addClass('navigation__btn--disabled')
 })
 
 //// ammount to add on each button press
@@ -233,7 +264,7 @@ $('.submit').click(function (e) {
 //const colors = [
 //  { front : '#00ff1f', back: '#00d119' }, // Green
 //  { front : '#3ffbeb', back: '#3ae6d7' }, // Turquoise
-//  { front : '#826aff', back: '#745fe3' }  // Purple   
+//  { front : '#826aff', back: '#745fe3' }  // Purple
 //]
 //
 //// helper function to pick a random number within a range
@@ -276,13 +307,13 @@ $('.submit').click(function (e) {
 //  this.velocity.x -= this.velocity.x * dragConfetti
 //  this.velocity.y = Math.min(this.velocity.y + gravityConfetti, terminalVelocity)
 //  this.velocity.x += Math.random() > 0.5 ? Math.random() : -Math.random()
-//  
+//
 //  // set position
 //  this.position.x += this.velocity.x
 //  this.position.y += this.velocity.y
 //
 //  // spin confetto by scaling y and set the color, .09 just slows cosine frequency
-//  this.scale.y = Math.cos((this.position.y + this.randomModifier) * 0.09)    
+//  this.scale.y = Math.cos((this.position.y + this.randomModifier) * 0.09)
 //}
 //
 //// Sequin Class
@@ -302,10 +333,10 @@ $('.submit').click(function (e) {
 //  // apply forces to velocity
 //  this.velocity.x -= this.velocity.x * dragSequins
 //  this.velocity.y = this.velocity.y + gravitySequins
-//  
+//
 //  // set position
 //  this.position.x += this.velocity.x
-//  this.position.y += this.velocity.y   
+//  this.position.y += this.velocity.y
 //}
 //
 //// add elements to arrays to be drawn
@@ -321,24 +352,24 @@ $('.submit').click(function (e) {
 //// draws the elements on the canvas
 //render = () => {
 //  ctx.clearRect(0, 0, canvas.width, canvas.height)
-//  
+//
 //  confetti.forEach((confetto, index) => {
 //    let width = (confetto.dimensions.x * confetto.scale.x)
 //    let height = (confetto.dimensions.y * confetto.scale.y)
-//    
+//
 //    // move canvas to position and rotate
 //    ctx.translate(confetto.position.x, confetto.position.y)
 //    ctx.rotate(confetto.rotation)
 //
 //    // update confetto "physics" values
 //    confetto.update()
-//    
+//
 //    // get front or back fill color
 //    ctx.fillStyle = confetto.scale.y > 0 ? confetto.color.front : confetto.color.back
-//    
+//
 //    // draw confetto
 //    ctx.fillRect(-width / 2, -height / 2, width, height)
-//    
+//
 //    // reset transform matrix
 //    ctx.setTransform(1, 0, 0, 1, 0, 0)
 //
@@ -348,16 +379,16 @@ $('.submit').click(function (e) {
 //    }
 //  })
 //
-//  sequins.forEach((sequin, index) => {  
+//  sequins.forEach((sequin, index) => {
 //    // move canvas to position
 //    ctx.translate(sequin.position.x, sequin.position.y)
-//    
+//
 //    // update sequin "physics" values
 //    sequin.update()
-//    
+//
 //    // set the color
 //    ctx.fillStyle = sequin.color
-//    
+//
 //    // draw sequin
 //    ctx.beginPath()
 //    ctx.arc(0, 0, sequin.radius, 0, 2 * Math.PI)
